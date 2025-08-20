@@ -1,9 +1,10 @@
 🚦 Route Rationalization Model Using Machine Learning for Real-Time Traffic Management
-📌 Project Overview
 
+📌 Project Overview
 This project presents an intelligent traffic management system that integrates machine learning-based congestion prediction with dynamic vehicle rerouting to optimize traffic flow in urban networks.
 
 The primary goal is to proactively reduce traffic congestion by rerouting vehicles before they enter congested areas.
+
 
 🔑 Highlights
 
@@ -18,6 +19,8 @@ Real-Time Simulation → Integrated with SUMO (Simulation of Urban Mobility).
 Performance Analysis → Logs rerouting decisions and congestion statistics for evaluation.
 
 👉 Experimental results show a 19.4% reduction in traffic congestion on average.
+
+
 
 🏗️ System Architecture
 
@@ -39,6 +42,8 @@ Simulation Layer
 
 Controls SUMO environment and vehicle rerouting.
 
+
+
 ⚙️ Technical Requirements
 Hardware
 
@@ -47,6 +52,8 @@ Intel Core i5 (or equivalent)
 8GB RAM
 
 256GB SSD
+
+
 
 Software
 
@@ -65,8 +72,8 @@ Matplotlib
 
 Clone the repository:
 
-git clone https://github.com/your-username/traffic-rationalization-ml.git
-cd traffic-rationalization-ml
+git clone https://github.com/bidhuripriyanshu/ROUTE_RATIONALISATION_ML_FINAL.git
+
 
 
 Install dependencies:
@@ -80,6 +87,8 @@ Download & Install SUMO
 
 Ensure SUMO binaries are added to your system PATH.
 
+
+
 ▶️ Usage
 
 Start SUMO simulation with your network file.
@@ -87,6 +96,8 @@ Start SUMO simulation with your network file.
 Run the traffic prediction and routing script:
 
 python main.py
+
+
 
 
 Monitor real-time rerouting and congestion reduction logs.
@@ -99,24 +110,10 @@ System logs all rerouting decisions and congestion statistics.
 
 Results visualized using Matplotlib.
 
+
+
 👨‍💻 Authors
 
-Aman Patre (23BCE11840)
+Aman Patre 
+priyanshu bidhuri
 
-Vishal Sahoo (23BCE11521)
-
-Mrinal Mohit (23BCE11545)
-
-Upparapalli Sreepathi Rohith (23BCE11593)
-
-Aketi Shankar Narayana (23BCE11774)
-
-📘 Project Guide
-
-Dr. Chandan Kumar Behera
-VIT Bhopal University
-
-📄 License
-
-This project is licensed under the MIT License – see the LICENSE
- file for details.
