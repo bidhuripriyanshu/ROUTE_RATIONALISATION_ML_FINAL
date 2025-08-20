@@ -1,71 +1,122 @@
-Route Rationalization Model Using Machine Learning for Real-Time Traffic Management
-Project Overview
-This project presents an intelligent traffic management system that combines machine learning-based congestion prediction with dynamic vehicle rerouting to optimize traffic flow in urban networks. The primary goal is to proactively reduce traffic congestion by rerouting vehicles before they enter congested areas.
+🚦 Route Rationalization Model Using Machine Learning for Real-Time Traffic Management
+📌 Project Overview
 
-The system leverages a three-tier architecture:
+This project presents an intelligent traffic management system that integrates machine learning-based congestion prediction with dynamic vehicle rerouting to optimize traffic flow in urban networks.
 
-A Traffic Predictor using a neural network to forecast future congestion levels.
+The primary goal is to proactively reduce traffic congestion by rerouting vehicles before they enter congested areas.
 
-An A 
-∗
-  routing algorithm enhanced with congestion awareness to find optimal paths.
+🔑 Highlights
 
-A Simulation Controller that manages real-time vehicle rerouting within the SUMO (Simulation of Urban Mobility) environment.
+Proactive Congestion Prediction → Neural network forecasts congestion up to 5 time steps ahead.
 
-Our findings show that this system successfully reduces traffic congestion by an average of 19.4% through proactive rerouting, demonstrating its potential for real-world application in smart city infrastructure.
+Congestion-Aware Routing → Enhanced A* algorithm considers real-time traffic, road length, and lane count.
 
-Key Features
-Proactive Congestion Prediction: Uses a neural network to forecast congestion up to 5 time steps ahead based on historical data.
+Dynamic Vehicle Rerouting → Vehicles rerouted in real time if new path offers >5% congestion reduction.
 
-Congestion-Aware Routing: The A 
-∗
-  algorithm calculates route costs based on real-time traffic conditions, road length, and number of lanes to find the most efficient path.
+Real-Time Simulation → Integrated with SUMO (Simulation of Urban Mobility).
 
-Dynamic Vehicle Rerouting: Vehicles are rerouted in real-time when a new path offers a significant improvement (>5% reduction in congestion).
+Performance Analysis → Logs rerouting decisions and congestion statistics for evaluation.
 
-Real-Time Simulation: The system is integrated with the SUMO traffic simulator to create a realistic testing environment.
+👉 Experimental results show a 19.4% reduction in traffic congestion on average.
 
-Performance Analysis: The system logs detailed rerouting decisions and congestion statistics to monitor and evaluate performance over extended periods.
+🏗️ System Architecture
 
-Technical Details
-Architecture
 The system is built on a modular, three-tier architecture:
 
-Data Processing Layer: Collects and normalizes real-time traffic data from the SUMO simulation.
+Data Processing Layer
 
-Prediction Layer: Implements the neural network model for traffic forecasting using TensorFlow/Keras.
+Collects & normalizes real-time traffic data from SUMO.
 
-Routing Layer: Utilizes the congestion-aware A 
-∗
-  algorithm to optimize vehicle routes.
+Prediction Layer
 
-Simulation Layer: Manages the SUMO environment and handles vehicle movements and rerouting.
+Neural network (TensorFlow/Keras) for traffic forecasting.
 
-Requirements
-Hardware: Intel Core i5 or equivalent CPU, 8GB RAM, 256GB SSD storage.
+Routing Layer
 
-Software:
+Congestion-aware A* algorithm for optimal pathfinding.
+
+Simulation Layer
+
+Controls SUMO environment and vehicle rerouting.
+
+⚙️ Technical Requirements
+Hardware
+
+Intel Core i5 (or equivalent)
+
+8GB RAM
+
+256GB SSD
+
+Software
 
 Python 3.8+
 
 SUMO (Simulation of Urban Mobility)
 
-TensorFlow/Keras
+TensorFlow / Keras
 
 NumPy
 
 Matplotlib
 
-Getting Started
-Installation
-(Provide instructions on how to install the necessary dependencies, e.g., pip install tensorflow numpy etc., and how to get SUMO.)
+🚀 Getting Started
+🔧 Installation
 
-Usage
-(Explain how to run the simulation and interact with the system.)
+Clone the repository:
 
-Authors
-Aman Patre 
-priyanshu bidhuri
+git clone https://github.com/your-username/traffic-rationalization-ml.git
+cd traffic-rationalization-ml
 
-License
-(Add license information here, e.g., MIT License)
+
+Install dependencies:
+
+pip install tensorflow numpy matplotlib
+
+
+Install SUMO:
+
+Download & Install SUMO
+
+Ensure SUMO binaries are added to your system PATH.
+
+▶️ Usage
+
+Start SUMO simulation with your network file.
+
+Run the traffic prediction and routing script:
+
+python main.py
+
+
+Monitor real-time rerouting and congestion reduction logs.
+
+📊 Performance Evaluation
+
+Average 19.4% congestion reduction achieved.
+
+System logs all rerouting decisions and congestion statistics.
+
+Results visualized using Matplotlib.
+
+👨‍💻 Authors
+
+Aman Patre (23BCE11840)
+
+Vishal Sahoo (23BCE11521)
+
+Mrinal Mohit (23BCE11545)
+
+Upparapalli Sreepathi Rohith (23BCE11593)
+
+Aketi Shankar Narayana (23BCE11774)
+
+📘 Project Guide
+
+Dr. Chandan Kumar Behera
+VIT Bhopal University
+
+📄 License
+
+This project is licensed under the MIT License – see the LICENSE
+ file for details.
